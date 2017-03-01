@@ -6,12 +6,17 @@ $content = file_get_contents('php://input');
 // Parse JSON
 $events = json_decode($content, true);
 
-echo '<pre>';
-print_r($events);
-echo '</pre>';
+$events = array();
+$events['events'] = '1';
+
+$events['events'] = '1';
+$event['message']['type'] = 'text';
+$event['type'] == 'message';
+$event['message']['text'] = '5555';
 
 // Validate parsed JSON data
 if (!is_null($events['events'])) {
+	echo 'dd';
 	// Loop through each event
 	foreach ($events['events'] as $event) {
 		// Reply only when message sent is in 'text' format
