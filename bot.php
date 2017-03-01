@@ -15,7 +15,7 @@ $event['type'] == 'message';
 $event['message']['text'] = '5555';
 
 // Validate parsed JSON data
-if (!is_null($events['events'])) {
+if (1==1) {
 	echo 'dd';
 	// Loop through each event
 	foreach ($events['events'] as $event) {
